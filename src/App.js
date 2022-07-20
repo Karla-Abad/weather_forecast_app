@@ -1,3 +1,4 @@
+import "normalize.css"
 import './App.css';
 import CurrentWeather from './components/current-weather/current-weather';
 import Search from './components/search/search';

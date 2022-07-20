@@ -3,12 +3,13 @@
   border-radius: 0.5rem;
   box-shadow: 0.75rem -2px 1.5rem 2px rgb(0 0 0 /30%);
   color: white;
-  background-color:dodgerblue;
+  background-color: dodgerblue;
   margin: 1rem auto 0 auto;
   padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.top, .bottom {
+.top,
+.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,32 +34,31 @@
   width: 35%;
 }
 
-.temperature{
-    font-weight: bold;
-    font-size: 3rem;
-    width: auto;
-    margin: 0.75rem 0;
+.temperature {
+  font-weight: bold;
+  font-size: 3rem;
+  width: auto;
+  margin: 0.75rem 0;
 }
 
-.details{
-    width: 100%;
-    padding-left: 1.5rem;
+.details {
+  width: 100%;
+  padding-left: 1.5rem;
 }
 
-.parameter-row{
-    display: flex;
-    justify-content: space-between;
-
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
 }
 
-.parameter-label{
-    text-align: left;
-    font-weight: 400;
-    font-size: 0.75rem;
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 0.75rem;
 }
 
-.parameter-value{
-    text-align: right;
-    font-weight: bold;
-    font-size: 0.75rem;
+.parameter-value {
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.75rem;
 }
