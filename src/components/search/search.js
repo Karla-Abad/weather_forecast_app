@@ -1,10 +1,18 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
-import { GEO_API_URL, geoApiOptions } from "../../api";
-import "normalize.css"
+import { GEO_API_URL, API_SECRET, API_HOST } from "../../api";
+import "normalize.css";
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
+
+  const geoApiOptions = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": API_SECRET,
+      "X-RapidAPI-Host": API_HOST,
+    },
+  };
 
   //minPopulation is a parameter from the the API that allows you to fetch cities that meet the condition, in order to reduce the number of results the user sees.
   const loadOptions = (inputValue) => {
